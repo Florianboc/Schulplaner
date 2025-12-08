@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Schulplaner – Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Schulplaner</h1>
+
+   <div id="auth-area">
+    <input id="email" type="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Passwort">
+
+    <input id="name" type="text" placeholder="Vollständiger Name" style="display:none;">
+
+    <button id="login-btn">Login</button>
+    <button id="toggle-signup-btn">Registrieren</button>
+
+    <p id="msg"></p>
+
+    <p id="email-confirm-info" class="info-msg" style="display:none;">
+        📩 Bitte bestätige deine E-Mail-Adresse!  
+        Die Bestätigungsmail wurde versendet.  
+        Prüfe auch deinen Spam-Ordner.  
+        Absender: <strong>no-reply@supabase.co</strong>
+    </p>
+</div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
