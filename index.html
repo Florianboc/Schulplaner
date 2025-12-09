@@ -9,37 +9,50 @@
 
 <body>
 
-<div class="container">
-    <h1>Schulplaner</h1>
+<body>
 
-   <div id="auth-area">
-    <input id="email" type="email" placeholder="Email">
-    <input id="password" type="password" placeholder="Passwort">
+<div class="login-wrapper">
+    <div class="login-card">
 
-    <input id="name" type="text" placeholder="Vollständiger Name" style="display:none;">
+        <h1>Schulplaner</h1>
+        <p class="subtitle">Melde dich an oder erstelle ein Konto</p>
 
-    <button id="login-btn">Login</button>
-    <button id="toggle-signup-btn">Registrieren</button>
+        <div id="auth-area">
 
-    <p id="msg"></p>
+            <input id="email" type="email" class="login-input" placeholder="Email">
+            <input id="password" type="password" class="login-input" placeholder="Passwort">
 
-    <p id="email-confirm-info" class="info-msg" style="display:none;">
-        📩 Bitte bestätige deine E-Mail-Adresse!  
-        Die Bestätigungsmail wurde versendet.  
-        Prüfe auch deinen Spam-Ordner.  
-        Absender: <strong>no-reply@supabase.co</strong>
-    </p>
+            <input id="name" type="text" class="login-input" placeholder="Vollständiger Name" style="display:none;">
+
+            <button id="login-btn" class="login-btn">Login</button>
+
+            <button id="toggle-signup-btn" class="secondary-btn">Registrieren</button>
+
+            <p id="msg" class="error-msg"></p>
+
+            <p id="email-confirm-info" class="info-msg" style="display:none;">
+                📩 Bitte bestätige deine E-Mail-Adresse!  
+                Die Bestätigungsmail wurde versendet.  
+                Prüfe auch deinen Spam-Ordner.  
+                Absender: <strong>no-reply@supabase.co</strong>
+            </p>
+        </div>
+    </div>
 </div>
-</div>
 
-<script src="app.js"></script>
 <footer>
     <p class="copyright-text">
         &copy; 2025 Florian Bockwoldt
     </p>
 </footer>
+
+<script src="app.js"></script>
+
+</body>
+
 </body>
 </html>
+
 
 
 
