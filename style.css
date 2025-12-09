@@ -822,3 +822,35 @@ body {
     cursor: pointer;
 }
 
+
+.copyright-text {
+    text-align: center; /* Zentriert den Text horizontal */
+    /* Fügt optional etwas oberen und unteren Abstand hinzu */
+    padding: 20px 0; 
+    /* Stellt sicher, dass der Text am unteren Rand des Footer-Containers positioniert ist */
+    margin: 0; 
+}
+
+/* Optional: Fügen Sie dieses Styling hinzu, um sicherzustellen, dass 
+   der Footer am unteren Rand des Viewports bleibt, auch wenn der Inhalt kurz ist */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto; /* Der Hauptinhalt wächst und schiebt den Footer nach unten */
+}
+
+footer {
+    /* Stellt sicher, dass der Footer am Ende der Seite angezeigt wird */
+    flex-shrink: 0; 
+    /* Fügen Sie hier Ihre eigenen Hintergrundfarben oder Stile hinzu */
+    background-color: #f4f4f4; 
+    width: 100%;
+}
