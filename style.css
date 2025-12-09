@@ -863,3 +863,81 @@ footer {
     padding: 10px 0;
     background-color: #f6f4f3; /* gleiche Farbe wie oben */
 }
+
+/* =========================================
+   LOGIN PAGE – MODERNES UI
+========================================= */
+
+.login-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gray-50);
+}
+
+.login-card {
+    width: 360px;
+    background: white;
+    padding: 28px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--gray-200);
+    text-align: center;
+}
+
+.login-card h1 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.login-card p {
+    margin: 0 0 20px;
+    color: var(--text-muted);
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    font-size: 15px;
+    border-radius: var(--radius);
+    border: 1px solid var(--gray-300);
+    background: var(--gray-100);
+}
+
+.login-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: white;
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    border-radius: var(--radius);
+    font-size: 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.login-btn:hover {
+    background: var(--primary-hover);
+}
+
+.register-link {
+    margin-top: 15px;
+    display: block;
+    font-size: 14px;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
